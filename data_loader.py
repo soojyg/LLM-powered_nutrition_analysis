@@ -29,11 +29,6 @@ def load_data(uploaded_files):
                 st.error(f"Error reading {file.name}: {e}")
                 continue
     return dataframes
-
-# Function to show raw data preview
-def show_raw_data(df, file_name):
-    st.write(f"Raw Data Preview of {file_name}")
-    st.dataframe(df.head(10))  # Show the first 10 rows
     
 # Function to show cleaned data preview
 def show_cleaned_data(df, file_name):
